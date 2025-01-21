@@ -1,4 +1,5 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+
 
 def index(request):
-    return HttpResponse("welcome to hyperspace")
+    return render(request ,'core/index.html')
